@@ -1,0 +1,81 @@
+@import 'fundamental';
+@import '__variable';
+
+.__app_grid {
+    padding-bottom: 20px;
+}
+
+.__app_spacing {
+    padding: 100px;
+    text-align: center;
+    color: $--light-1;
+    white-space: nowrap;
+    margin-bottom: 10px;
+
+    &.__app_spacing_button {
+        margin: auto;
+    }
+}
+
+.__app_input {
+    width: 100%;
+
+    &:focus {
+        outline-color: black !important;
+        border-color: black !important;
+    }
+}
+
+.__app_input_button {
+    text-align: center;
+
+    svg {
+        color: darken($--blue-dark, 15);
+    }
+}
+
+.__todo_list {
+    width: fit-content;
+    display: inline-flex;
+    margin: 5px !important;
+    align-content: center;
+    background: darken($--blue-dark, 15);
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    span {
+        font-weight: 300;
+        font-size: 1.4rem;
+        color: $--light-6;
+        margin: auto;
+    }
+
+    .__todo_list_button_group {
+        color: $--red-dark !important;
+        display: flex;
+
+        button {
+            padding: 8px !important;
+            margin: auto auto !important;
+        }
+    }
+}
+
+.__todo_item {
+    margin-right: 20px;
+    p {
+        font-size: 1rem;
+        color: darken($--light-6, 10);
+    }
+}
+
+.__todo_list_modal {
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    background: $--light-6;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba($--dark-6, 0.75);
+}
